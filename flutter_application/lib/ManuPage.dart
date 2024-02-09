@@ -1,29 +1,14 @@
 import 'package:flutter/material.dart';
 
-/// Flutter code sample for [BottomNavigationBar].
 
-void main() => runApp(const MyApp());
-
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
+class MenuPage extends StatefulWidget {
+  const MenuPage({super.key});
 
   @override
-  Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: MyHomePage(),
-      debugShowCheckedModeBanner: false,
-    );
-  }
+  State<MenuPage> createState() => _MenuPageState();
 }
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
-
-  @override
-  State<MyHomePage> createState() => _MyHomePageState();
-}
-
-class _MyHomePageState extends State<MyHomePage> {
+class _MenuPageState extends State<MenuPage> {
   int _selectedIndex = 0;
 
   static const TextStyle optionStyle = TextStyle(fontSize: 30, fontWeight: FontWeight.bold);
@@ -85,6 +70,3 @@ class _MyHomePageState extends State<MyHomePage> {
   );
   }
 }
-
-int _selectedIndex = 0;
-  final ScrollController _homeController = ScrollController();
